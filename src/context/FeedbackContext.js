@@ -41,6 +41,13 @@ export const FeedbackProvider = ({ children }) => {
     }
   }
 
+  // Update feedback item
+  const updateFeedback = (id, updItem) => {
+    setFeedback(
+      feedback.map((item) => (item.id === id ? { ...item, ...updItem } : item))
+    )
+  }
+
   // Set item to be updated
   const editFeedback = (item) => {
     setFeedbackEdit({ item, edit: true })
@@ -52,14 +59,12 @@ export const FeedbackProvider = ({ children }) => {
       value={{
         // State
         feedback,
-        // Function
-        deleteFeedback,
-        // Function
-        addFeedback,
-        // Function
-        editFeedback,
-        // State
         feedbackEdit,
+        // Functions
+        deleteFeedback,
+        addFeedback,
+        editFeedback,
+        updateFeedback,
       }}
     >
       {children}
