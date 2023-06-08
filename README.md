@@ -1,5 +1,7 @@
 # React Feedback CRUD App
 
+A React.js CRUD feedback\review app.
+
 Live version: https://rad-kheer-c53a1a.netlify.app/
 
 Screenshot:
