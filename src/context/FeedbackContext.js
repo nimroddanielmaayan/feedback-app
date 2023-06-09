@@ -46,6 +46,12 @@ export const FeedbackProvider = ({ children }) => {
     setFeedback(
       feedback.map((item) => (item.id === id ? { ...item, ...updItem } : item))
     )
+
+    // Reset edit state to false, after updating the item
+    setFeedbackEdit({
+      item: {},
+      edit: false,
+    })
   }
 
   // Set item to be updated
