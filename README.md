@@ -2,7 +2,7 @@
 
 ### A React feedback\review CRUD app, utilizing the Context API, React Router and Framer Motion animations
 
-Live version: https://rad-kheer-c53a1a.netlify.app
+Live version: https://react-crud-feedback.netlify.app/
 
 Screenshot:
 
